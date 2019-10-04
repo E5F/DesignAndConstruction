@@ -34,7 +34,7 @@ def stringer_configs():
     """Generate all possible conbinations of stringer configuration,
     mixing all types of stringers but preserving symmetry"""
     configs = []
-    for a in range(7):  # lol should've just used permutations
+    for a in range(7):  # lol should've just used combinations
         for b in range(7-a):
             for c in range(7-(a+b)):
                 for d in range(7-(a+b+c)):
